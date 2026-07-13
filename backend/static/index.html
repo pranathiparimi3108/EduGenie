@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduGenie | AI Learning Platform</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="badge">SmartBridge AI Project</p>
+      <h1>EduGenie</h1>
+      <p class="subtitle">AI-powered personalized learning with Google Gemini</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <label for="topic">Topic</label>
+      <input id="topic" type="text" placeholder="e.g. Neural Networks" />
+
+      <label for="feature">Feature</label>
+      <select id="feature">
+        <option value="explain">Explain Topic</option>
+        <option value="learning-path">Learning Path</option>
+        <option value="quiz">Generate Quiz</option>
+        <option value="qna">Ask a Question</option>
+        <option value="summary">Summarize Content</option>
+      </select>
+
+      <div id="extra-fields"></div>
+
+      <button id="generate-btn" type="button">Generate</button>
+    </section>
+
+    <section class="panel output-panel">
+      <h2>Result</h2>
+      <pre id="output">Enter a topic and choose a feature to begin.</pre>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built by Parimi Venkata Pranathi · Vignan's Nirula Institute of Technology and Science for Women</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
