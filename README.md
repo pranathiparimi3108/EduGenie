@@ -161,7 +161,7 @@ See [FUTURE_SCOPE.md](FUTURE_SCOPE.md)
 ## Author
 
 **Parimi Venkata Pranathi**  
-Computer Science Student | AI Enthusiast  
+Data Science Student | AI Enthusiast  
 Vignan's Nirula Institute of Technology and Science for Women  
 GitHub: [@pranathiparimi3108](https://github.com/pranathiparimi3108)
 
