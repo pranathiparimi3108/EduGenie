@@ -1,172 +1,469 @@
-# EduGenie
+<p align="center">
+  <img src="assets/logo/logo.png" alt="EduGenie Logo" width="180">
+</p>
 
-[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
-[![Flask](https://img.shields.io/badge/Flask-3.0+-black.svg)](https://flask.palletsprojects.com/)
-[![Gemini AI](https://img.shields.io/badge/Gemini-AI-orange.svg)](https://ai.google.dev/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<h1 align="center">EduGenie</h1>
 
-**EduGenie** is an AI-powered personalized learning platform built with **Flask**, **Python**, and **Google Gemini AI**. It helps students learn faster through intelligent explanations, personalized learning paths, AI-generated quizzes, summaries, and interactive Q&A.
+<p align="center">
+<b>AI-Powered Personalized Learning Platform using Google Gemini</b>
+</p>
 
-> Built by **Parimi Venkata Pranathi**  
-> Vignan's Nirula Institute of Technology and Science for Women
+<p align="center">
 
----
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Flask](https://img.shields.io/badge/Flask-3.x-green)
+![Google Gemini](https://img.shields.io/badge/Google-Gemini-orange)
+![MIT License](https://img.shields.io/badge/License-MIT-red)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
-## Features
-
-- **Topic Explanation** — Learn any concept in simple language
-- **Personalized Learning Path** — Day-by-day study plans
-- **AI Quiz Generator** — MCQs with answers and explanations
-- **Interactive Q&A** — Ask doubts and get instant help
-- **Smart Summaries** — Turn long notes into revision bullets
+</p>
 
 ---
 
-## Tech Stack
+# 📖 Overview
+
+EduGenie is an **AI-powered personalized learning platform** developed as part of the **SmartBridge AI Virtual Internship Program**.
+
+The platform leverages **Google Gemini AI** to provide intelligent educational assistance by generating concept explanations, answering academic questions, creating quizzes, summarizing study materials, and generating personalized learning paths.
+
+EduGenie aims to make learning more interactive, personalized, and efficient through the power of Generative AI.
+
+---
+
+# 📑 Table of Contents
+
+- Overview
+- Features
+- Technology Stack
+- Project Architecture
+- Project Structure
+- Installation
+- API Endpoints
+- Screenshots
+- Demo Video
+- Testing
+- Documentation
+- Security
+- Future Enhancements
+- Learning Outcomes
+- Author
+- Acknowledgement
+- License
+
+---
+
+# ✨ Features
+
+- 📘 AI-Powered Concept Explanation
+- ❓ Intelligent Question Answering
+- 📝 AI Quiz Generator
+- 📚 Smart Text Summarization
+- 🎯 Personalized Learning Path Generator
+- 🤖 Google Gemini AI Integration
+- ⚡ Fast Response Generation
+- 🎨 Responsive User Interface
+- 🔒 Secure API Key Management
+- 📄 Modular Project Architecture
+
+---
+
+# 🛠 Technology Stack
 
 | Layer | Technology |
-|-------|------------|
-| Backend | Python, Flask |
-| AI | Google Gemini API |
-| Frontend | HTML, CSS, JavaScript |
+|---------|------------|
+| Programming Language | Python |
+| Backend | Flask |
+| Artificial Intelligence | Google Gemini API |
+| Frontend | HTML5, CSS3, JavaScript |
+| Environment | python-dotenv |
 | Testing | pytest |
-| Config | python-dotenv |
+| Version Control | Git & GitHub |
+| IDE | Visual Studio Code |
 
 ---
 
-## Project Structure
+# 🏗 Project Architecture
+
+```
+                User
+
+                  │
+
+                  ▼
+
+     HTML • CSS • JavaScript
+
+                  │
+
+                  ▼
+
+            Flask Backend
+
+                  │
+
+       ┌──────────┼──────────┐
+       │          │          │
+       ▼          ▼          ▼
+
+ Explanation    Quiz      Learning Path
+
+       │          │          │
+
+       └──────┬───┴──────────┘
+              ▼
+
+      Google Gemini AI
+
+              │
+
+              ▼
+
+      AI Generated Response
+```
+
+---
+
+# 📂 Project Structure
 
 ```
 EduGenie/
+│
+├── assets/
+│   ├── logo/
+│   ├── screenshots/
+│   └── demo/
+│
 ├── backend/
-│   ├── ai/              # Gemini integration
-│   ├── modules/         # Feature modules
-│   ├── static/          # Web UI
-│   ├── tests/           # Test suite
-│   └── app.py           # Flask entry point
-├── assets/              # Screenshots, logo, demo
-├── docs/                # Documentation
-└── README.md
+│   ├── ai/
+│   ├── modules/
+│   ├── static/
+│   ├── tests/
+│   ├── app.py
+│   ├── config.py
+│   └── requirements.txt
+│
+├── docs/
+│   ├── API_DOCUMENTATION.md
+│   ├── INSTALLATION.md
+│   ├── SMARTBRIDGE_CHECKLIST.md
+│   └── USER_GUIDE.md
+│
+├── .env.example
+├── README.md
+├── LICENSE
+├── SECURITY.md
+├── CONTRIBUTING.md
+├── CHANGELOG.md
+└── requirements.txt
 ```
-
-See [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md) for details.
 
 ---
 
-## Installation
+# ⚙ Installation
 
-### 1. Clone the repository
+## 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/pranathiparimi3108/EduGenie.git
+
 cd EduGenie
 ```
 
-### 2. Create virtual environment
+---
+
+## 2️⃣ Create a Virtual Environment
+
+Windows
 
 ```bash
 python -m venv venv
-venv\Scripts\activate        # Windows
-# source venv/bin/activate   # macOS/Linux
+
+venv\Scripts\activate
 ```
 
-### 3. Install dependencies
+Linux / macOS
+
+```bash
+python3 -m venv venv
+
+source venv/bin/activate
+```
+
+---
+
+## 3️⃣ Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure environment
+---
+
+## 4️⃣ Configure Environment Variables
+
+Copy the example file.
+
+Windows
 
 ```bash
 copy .env.example .env
 ```
 
-Add your Gemini API key to `.env`:
+Linux / macOS
 
-```
-GEMINI_API_KEY=your_api_key_here
+```bash
+cp .env.example .env
 ```
 
-### 5. Run the app
+Open `.env`
+
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+```
+
+---
+
+## 5️⃣ Run the Application
 
 ```bash
 cd backend
+
 python app.py
 ```
 
-Open: **http://127.0.0.1:5000**
+Open
 
----
-
-## API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/health` | Health check |
-| POST | `/api/explain` | Explain a topic |
-| POST | `/api/learning-path` | Generate learning path |
-| POST | `/api/quiz` | Generate quiz |
-| POST | `/api/qna` | Answer a question |
-| POST | `/api/summary` | Summarize content |
-
-Full docs: [docs/API_DOCUMENTATION.md](docs/API_DOCUMENTATION.md)
-
----
-
-## Run Tests
-
-```bash
-cd backend
-pytest tests
+```
+http://127.0.0.1:5000
 ```
 
 ---
 
-## Screenshots
+# 🧠 AI Modules
 
-> Add screenshots to `assets/screenshots/` and update this section.
+### 📘 Concept Explanation
 
-| Home | Quiz | Learning Path |
-|------|------|---------------|
-| Coming soon | Coming soon | Coming soon |
+Explains academic concepts in a simple and understandable manner.
 
 ---
 
-## SmartBridge Submission
+### ❓ Question Answering
 
-This project is prepared for SmartBridge evaluation with:
-
-- Modular AI architecture
-- Complete documentation
-- GitHub-ready structure
-- Test suite
-
-Checklist: [docs/SMARTBRIDGE_CHECKLIST.md](docs/SMARTBRIDGE_CHECKLIST.md)
+Answers educational questions using Google Gemini AI.
 
 ---
 
-## Future Enhancements
+### 📝 Quiz Generator
 
-- User authentication
-- Progress tracking
-- PDF notes export
-- Voice input / text-to-speech
-- Deployment with live demo
-
-See [FUTURE_SCOPE.md](FUTURE_SCOPE.md)
+Creates AI-generated multiple-choice questions with answers and explanations.
 
 ---
 
-## Author
+### 📚 Smart Summary
 
-**Parimi Venkata Pranathi**  
-Data Science Student | AI Enthusiast  
-Vignan's Nirula Institute of Technology and Science for Women  
-GitHub: [@pranathiparimi3108](https://github.com/pranathiparimi3108)
+Converts lengthy study material into concise notes and revision points.
 
 ---
 
-## License
+### 🎯 Personalized Learning Path
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE).
+Generates structured study plans based on the selected topic.
+
+---
+
+# 🌐 API Endpoints
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | `/api/health` | Health Check |
+| POST | `/api/explain` | Generate Explanation |
+| POST | `/api/qna` | Answer Questions |
+| POST | `/api/quiz` | Generate Quiz |
+| POST | `/api/summary` | Generate Summary |
+| POST | `/api/learning-path` | Generate Learning Path |
+
+For detailed API documentation, see:
+
+```
+docs/API_DOCUMENTATION.md
+```
+
+---
+
+# 🖼 Screenshots
+
+## Home Page
+
+![Home](assets/screenshots/home.png)
+
+---
+
+## Concept Explanation
+
+![Explanation](assets/screenshots/explanation.png)
+
+---
+
+## Question Answering
+
+![QnA](assets/screenshots/qna.png)
+
+---
+
+## Quiz Generation
+
+![Quiz](assets/screenshots/quiz.png)
+
+---
+
+## Learning Path
+
+![Learning Path](assets/screenshots/learning_path.png)
+
+---
+
+## Summary
+
+![Summary](assets/screenshots/summary.png)
+
+---
+
+# 🎥 Demo Video
+
+Watch the complete project demonstration.
+
+**▶ [EduGenie Demo Video](assets/demo/EduGenie_Demo.mp4)**
+
+---
+
+# 🧪 Testing
+
+Run all tests.
+
+```bash
+cd backend
+
+pytest tests
+```
+
+The project includes testing for:
+
+- AI module integration
+- Backend functionality
+- API response validation
+- Error handling
+- User input validation
+
+---
+
+# 📚 Documentation
+
+Complete project documentation is available in the `docs/` folder.
+
+- API Documentation
+- Installation Guide
+- User Guide
+- SmartBridge Checklist
+
+---
+
+# 🔒 Security
+
+This project follows standard security practices.
+
+- API keys are stored using environment variables.
+- `.env` files are excluded from GitHub.
+- Sensitive credentials are never committed.
+- User inputs are validated before processing.
+
+For more information, refer to:
+
+```
+SECURITY.md
+```
+
+---
+
+# 🚀 Future Enhancements
+
+- User Authentication
+- Student Dashboard
+- Learning Progress Tracking
+- PDF Upload & AI Analysis
+- Voice Assistant
+- Multi-language Support
+- Mobile Application
+- Offline AI Model Integration
+- Cloud Deployment
+
+---
+
+# 🎯 Learning Outcomes
+
+This project provided practical experience in:
+
+- Generative AI
+- Google Gemini API
+- Prompt Engineering
+- REST API Development
+- Flask Web Development
+- AI-Powered Educational Systems
+- Natural Language Processing (NLP)
+- Git & GitHub
+- Software Documentation
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Push the branch.
+5. Open a Pull Request.
+
+Please read **CONTRIBUTING.md** before contributing.
+
+---
+
+# 👩‍💻 Author
+
+## Parimi Venkata Pranathi
+
+**B.Tech – Data Science**
+
+Vignan's Nirula Institute of Technology and Science for Women
+
+GitHub:
+https://github.com/pranathiparimi3108
+
+---
+
+# 🙏 Acknowledgement
+
+This project was developed as part of the **SmartBridge AI Virtual Internship Program**.
+
+Special thanks to:
+
+- SmartBridge
+- Vignan's Nirula Institute of Technology and Science for Women
+- Faculty Mentors
+- Google Gemini AI
+
+for their continuous support and guidance throughout the project.
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+See the **LICENSE** file for more details.
+
+---
+
+<p align="center">
+⭐ If you found this project helpful, consider giving it a Star on GitHub!
+</p>
