@@ -1,54 +1,22 @@
-<p align="center">
-  <img src="assets/logo/logo.png" alt="logo" width="180">
-</p>
+# EduGenie
 
-<h1 align="center">EduGenie</h1>
-
-<p align="center">
-<b>AI-Powered Personalized Learning Platform using Google Gemini</b>
-</p>
-
-<p align="center">
+### AI-Powered Personalized Learning Platform using Google Gemini
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![Flask](https://img.shields.io/badge/Flask-3.x-green)
 ![Google Gemini](https://img.shields.io/badge/Google-Gemini-orange)
-![MIT License](https://img.shields.io/badge/License-MIT-red)
+![License](https://img.shields.io/badge/License-MIT-red)
 ![Status](https://img.shields.io/badge/Project-Completed-success)
-
-</p>
 
 ---
 
 # 📖 Overview
 
-EduGenie is an **AI-powered personalized learning platform** developed as part of the **SmartBridge AI Virtual Internship Program**.
+EduGenie is an AI-powered educational assistant developed as part of the **SmartBridge AI Virtual Internship Program**.
 
-The platform leverages **Google Gemini AI** to provide intelligent educational assistance by generating concept explanations, answering academic questions, creating quizzes, summarizing study materials, and generating personalized learning paths.
+The platform leverages **Google Gemini AI** to provide intelligent educational assistance through AI-powered concept explanations, question answering, quiz generation, text summarization, and personalized learning paths.
 
-EduGenie aims to make learning more interactive, personalized, and efficient through the power of Generative AI.
-
----
-
-# 📑 Table of Contents
-
-- Overview
-- Features
-- Technology Stack
-- Project Architecture
-- Project Structure
-- Installation
-- API Endpoints
-- Screenshots
-- Demo Video
-- Testing
-- Documentation
-- Security
-- Future Enhancements
-- Learning Outcomes
-- Author
-- Acknowledgement
-- License
+EduGenie is designed to simplify learning, improve student engagement, and provide an interactive AI-based educational experience using modern Generative AI technologies.
 
 ---
 
@@ -56,12 +24,12 @@ EduGenie aims to make learning more interactive, personalized, and efficient thr
 
 - 📘 AI-Powered Concept Explanation
 - ❓ Intelligent Question Answering
-- 📝 AI Quiz Generator
+- 📝 AI Quiz Generation
 - 📚 Smart Text Summarization
 - 🎯 Personalized Learning Path Generator
 - 🤖 Google Gemini AI Integration
 - ⚡ Fast Response Generation
-- 🎨 Responsive User Interface
+- 🎨 Responsive Web Interface
 - 🔒 Secure API Key Management
 - 📄 Modular Project Architecture
 
@@ -69,54 +37,54 @@ EduGenie aims to make learning more interactive, personalized, and efficient thr
 
 # 🛠 Technology Stack
 
-| Layer | Technology |
-|---------|------------|
-| Programming Language | Python |
-| Backend | Flask |
-| Artificial Intelligence | Google Gemini API |
+| Category | Technology |
+|-----------|------------|
+| Programming Language | Python 3.10+ |
+| Backend Framework | Flask |
 | Frontend | HTML5, CSS3, JavaScript |
-| Environment | python-dotenv |
+| Artificial Intelligence | Google Gemini API |
+| Environment Management | python-dotenv |
 | Testing | pytest |
 | Version Control | Git & GitHub |
 | IDE | Visual Studio Code |
 
 ---
 
-# 🏗 Project Architecture
+# 🏗 System Architecture
 
 ```
-                User
+                    User
 
-                  │
+                      │
 
-                  ▼
+                      ▼
 
-     HTML • CSS • JavaScript
+        HTML • CSS • JavaScript
 
-                  │
+                      │
 
-                  ▼
+                      ▼
 
-            Flask Backend
+               Flask Backend
 
-                  │
+                      │
 
-       ┌──────────┼──────────┐
-       │          │          │
-       ▼          ▼          ▼
+     ┌────────────┬────────────┐
+     │            │            │
+     ▼            ▼            ▼
 
  Explanation    Quiz      Learning Path
 
-       │          │          │
+     │            │            │
 
-       └──────┬───┴──────────┘
-              ▼
+     └───────┬────┴────────────┘
+             ▼
 
       Google Gemini AI
 
-              │
+             │
 
-              ▼
+             ▼
 
       AI Generated Response
 ```
@@ -129,9 +97,15 @@ EduGenie aims to make learning more interactive, personalized, and efficient thr
 EduGenie/
 │
 ├── assets/
-│   ├── logo/
 │   ├── screenshots/
-│   └── demo/
+│   │   ├── Explain.png
+│   │   ├── HomePage.png
+│   │   ├── Learning_Path.png
+│   │   ├── QnA.png
+│   │   └── Quiz.png
+│   │
+│   ├── EduGenie_Demo.mp4
+│   └── logo.png
 │
 ├── backend/
 │   ├── ai/
@@ -149,11 +123,16 @@ EduGenie/
 │   └── USER_GUIDE.md
 │
 ├── .env.example
-├── README.md
-├── LICENSE
-├── SECURITY.md
-├── CONTRIBUTING.md
+├── .gitignore
 ├── CHANGELOG.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── FEATURES.md
+├── FUTURE_SCOPE.md
+├── LICENSE
+├── PROJECT_STRUCTURE.md
+├── README.md
+├── SECURITY.md
 └── requirements.txt
 ```
 
@@ -161,7 +140,7 @@ EduGenie/
 
 # ⚙ Installation
 
-## 1️⃣ Clone the Repository
+## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/pranathiparimi3108/EduGenie.git
@@ -171,9 +150,9 @@ cd EduGenie
 
 ---
 
-## 2️⃣ Create a Virtual Environment
+## 2. Create a Virtual Environment
 
-Windows
+### Windows
 
 ```bash
 python -m venv venv
@@ -181,7 +160,7 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-Linux / macOS
+### Linux/macOS
 
 ```bash
 python3 -m venv venv
@@ -191,7 +170,7 @@ source venv/bin/activate
 
 ---
 
-## 3️⃣ Install Dependencies
+## 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -199,23 +178,23 @@ pip install -r requirements.txt
 
 ---
 
-## 4️⃣ Configure Environment Variables
+## 4. Configure Environment Variables
 
-Copy the example file.
+Copy the example environment file.
 
-Windows
+### Windows
 
 ```bash
 copy .env.example .env
 ```
 
-Linux / macOS
+### Linux/macOS
 
 ```bash
 cp .env.example .env
 ```
 
-Open `.env`
+Open the `.env` file and add your Gemini API key.
 
 ```env
 GEMINI_API_KEY=YOUR_GEMINI_API_KEY
@@ -223,7 +202,7 @@ GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 
 ---
 
-## 5️⃣ Run the Application
+## 5. Run the Application
 
 ```bash
 cd backend
@@ -231,7 +210,7 @@ cd backend
 python app.py
 ```
 
-Open
+Open your browser:
 
 ```
 http://127.0.0.1:5000
@@ -243,31 +222,31 @@ http://127.0.0.1:5000
 
 ### 📘 Concept Explanation
 
-Explains academic concepts in a simple and understandable manner.
+Provides simple, detailed, and AI-generated explanations for educational topics.
 
 ---
 
 ### ❓ Question Answering
 
-Answers educational questions using Google Gemini AI.
+Allows students to ask questions and receive intelligent answers using Google Gemini.
 
 ---
 
 ### 📝 Quiz Generator
 
-Creates AI-generated multiple-choice questions with answers and explanations.
+Generates multiple-choice quizzes with answers and explanations.
 
 ---
 
 ### 📚 Smart Summary
 
-Converts lengthy study material into concise notes and revision points.
+Converts lengthy study materials into concise revision notes.
 
 ---
 
 ### 🎯 Personalized Learning Path
 
-Generates structured study plans based on the selected topic.
+Creates customized study plans based on the selected learning topic.
 
 ---
 
@@ -276,13 +255,13 @@ Generates structured study plans based on the selected topic.
 | Method | Endpoint | Description |
 |---------|----------|-------------|
 | GET | `/api/health` | Health Check |
-| POST | `/api/explain` | Generate Explanation |
-| POST | `/api/qna` | Answer Questions |
+| POST | `/api/explain` | Explain a Topic |
+| POST | `/api/qna` | Question Answering |
 | POST | `/api/quiz` | Generate Quiz |
-| POST | `/api/summary` | Generate Summary |
+| POST | `/api/summary` | Summarize Content |
 | POST | `/api/learning-path` | Generate Learning Path |
 
-For detailed API documentation, see:
+For complete API documentation, refer to:
 
 ```
 docs/API_DOCUMENTATION.md
@@ -292,53 +271,29 @@ docs/API_DOCUMENTATION.md
 
 # 🖼 Screenshots
 
-## Home Page
+Application screenshots are available in the **assets/screenshots/** folder.
 
-![Home](assets/screenshots/home.png)
+The repository includes screenshots of:
 
----
-
-## Concept Explanation
-
-![Explanation](assets/screenshots/explanation.png)
-
----
-
-## Question Answering
-
-![QnA](assets/screenshots/qna.png)
-
----
-
-## Quiz Generation
-
-![Quiz](assets/screenshots/quiz.png)
-
----
-
-## Learning Path
-
-![Learning Path](assets/screenshots/learning_path.png)
-
----
-
-## Summary
-
-![Summary](assets/screenshots/summary.png)
+- 🏠 Home Page
+- 📘 Concept Explanation
+- ❓ Question Answering
+- 📝 Quiz Generation
+- 🎯 Personalized Learning Path
 
 ---
 
 # 🎥 Demo Video
 
-Watch the complete project demonstration.
+The complete project demonstration video is available in the **assets** folder.
 
-**▶ [EduGenie Demo Video](assets/demo/EduGenie_Demo.mp4)**
+**▶ [Download EduGenie Demo Video](assets/EduGenie_Demo.mp4)**
 
 ---
 
 # 🧪 Testing
 
-Run all tests.
+Run the test suite:
 
 ```bash
 cd backend
@@ -346,19 +301,19 @@ cd backend
 pytest tests
 ```
 
-The project includes testing for:
+Testing includes:
 
-- AI module integration
-- Backend functionality
-- API response validation
-- Error handling
-- User input validation
+- AI Module Integration
+- API Validation
+- Backend Functionality
+- Error Handling
+- User Input Validation
 
 ---
 
 # 📚 Documentation
 
-Complete project documentation is available in the `docs/` folder.
+Complete documentation is available in the **docs/** directory.
 
 - API Documentation
 - Installation Guide
@@ -369,18 +324,14 @@ Complete project documentation is available in the `docs/` folder.
 
 # 🔒 Security
 
-This project follows standard security practices.
+This project follows secure development practices.
 
 - API keys are stored using environment variables.
-- `.env` files are excluded from GitHub.
-- Sensitive credentials are never committed.
+- `.env` files are excluded from version control.
+- Sensitive credentials are never committed to GitHub.
 - User inputs are validated before processing.
 
-For more information, refer to:
-
-```
-SECURITY.md
-```
+For more details, see **SECURITY.md**.
 
 ---
 
@@ -389,11 +340,11 @@ SECURITY.md
 - User Authentication
 - Student Dashboard
 - Learning Progress Tracking
-- PDF Upload & AI Analysis
-- Voice Assistant
+- PDF Upload and AI Analysis
+- Voice Assistant Integration
 - Multi-language Support
 - Mobile Application
-- Offline AI Model Integration
+- Offline AI Model Support
 - Cloud Deployment
 
 ---
@@ -403,14 +354,13 @@ SECURITY.md
 This project provided practical experience in:
 
 - Generative AI
-- Google Gemini API
 - Prompt Engineering
-- REST API Development
+- Google Gemini API Integration
 - Flask Web Development
-- AI-Powered Educational Systems
+- REST API Development
 - Natural Language Processing (NLP)
-- Git & GitHub
 - Software Documentation
+- Git & GitHub
 
 ---
 
@@ -418,10 +368,10 @@ This project provided practical experience in:
 
 Contributions are welcome.
 
-1. Fork the repository.
+1. Fork this repository.
 2. Create a feature branch.
 3. Commit your changes.
-4. Push the branch.
+4. Push your branch.
 5. Open a Pull Request.
 
 Please read **CONTRIBUTING.md** before contributing.
@@ -430,14 +380,13 @@ Please read **CONTRIBUTING.md** before contributing.
 
 # 👩‍💻 Author
 
-## Parimi Venkata Pranathi
+**Parimi Venkata Pranathi**
 
-**B.Tech – Data Science**
+B.Tech – Data Science
 
 Vignan's Nirula Institute of Technology and Science for Women
 
-GitHub:
-https://github.com/pranathiparimi3108
+GitHub: https://github.com/pranathiparimi3108
 
 ---
 
@@ -452,7 +401,7 @@ Special thanks to:
 - Faculty Mentors
 - Google Gemini AI
 
-for their continuous support and guidance throughout the project.
+for their guidance and support throughout the project.
 
 ---
 
@@ -460,10 +409,8 @@ for their continuous support and guidance throughout the project.
 
 This project is licensed under the **MIT License**.
 
-See the **LICENSE** file for more details.
+See the **LICENSE** file for complete details.
 
 ---
 
-<p align="center">
-⭐ If you found this project helpful, consider giving it a Star on GitHub!
-</p>
+⭐ **If you found this project useful, consider giving it a Star on GitHub!**
