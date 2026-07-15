@@ -289,6 +289,9 @@ The complete project demonstration video is available in the **assets** folder.
 
 **▶ [Download EduGenie Demo Video](assets/EduGenie_Demo.mp4)**
 
+Watch the complete demo here:
+
+[https://youtu.be/YOUR_VIDEO_ID](https://youtu.be/E1PSeyLu2P4)
 ---
 
 # 🧪 Testing
