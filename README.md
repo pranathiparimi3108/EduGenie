@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo/logo.png" alt="EduGenie Logo" width="180">
+  <img src="assets/logo/logo.png" alt="logo" width="180">
 </p>
 
 <h1 align="center">EduGenie</h1>
