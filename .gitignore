@@ -1,38 +1,103 @@
+# =====================================================
+# EduGenie - .gitignore
+# =====================================================
+
+# -----------------------
 # Python
+# -----------------------
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
-.Python
 *.so
+.Python
 
-# Virtual environments
+# -----------------------
+# Virtual Environment
+# -----------------------
 venv/
 .venv/
 env/
+ENV/
 
-# Environment variables
+# -----------------------
+# Environment Variables
+# -----------------------
 .env
 .env.local
+.env.*
 
-# IDE
-.idea/
+# -----------------------
+# Flask
+# -----------------------
+instance/
+.flaskenv
+
+# -----------------------
+# Streamlit
+# -----------------------
+.streamlit/
+
+# -----------------------
+# VS Code
+# -----------------------
 .vscode/
-*.swp
-*.swo
 
+# -----------------------
+# PyCharm
+# -----------------------
+.idea/
+
+# -----------------------
+# Jupyter Notebook
+# -----------------------
+.ipynb_checkpoints/
+
+# -----------------------
 # Testing
+# -----------------------
 .pytest_cache/
 .coverage
 htmlcov/
+.tox/
+.cache/
 
-# OS
-.DS_Store
-Thumbs.db
-
+# -----------------------
 # Logs
+# -----------------------
 *.log
 
-# Streamlit / Flask cache
-.streamlit/
-instance/
+# -----------------------
+# Build Files
+# -----------------------
+build/
+dist/
+*.egg-info/
+
+# -----------------------
+# Operating System
+# -----------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------
+# Temporary Files
+# -----------------------
+*.tmp
+*.temp
+*.bak
+
+# -----------------------
+# Media (Optional)
+# Uncomment if needed
+# -----------------------
+# *.mp4
+# *.zip
+
+# -----------------------
+# API Keys & Secrets
+# -----------------------
+credentials.json
+secret.json
+config_local.py
