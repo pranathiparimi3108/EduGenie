@@ -292,9 +292,8 @@ The complete project demonstration video is available in the **assets** folder.
 Watch the complete demo here:
 
 [https://youtu.be/YOUR_VIDEO_ID](https://youtu.be/E1PSeyLu2P4)
-Live Demo: https://edugenie-production-46c5.up.railway.app
 ---
-
+Live Demo: https://edugenie-production-46c5.up.railway.app
 # 🧪 Testing
 
 Run the test suite:
